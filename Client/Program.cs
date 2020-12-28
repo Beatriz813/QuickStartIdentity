@@ -39,8 +39,10 @@ namespace Client
                 return;
             }
 
+            Console.WriteLine("Resposta do Token");
             Console.WriteLine(tokenResponse.Json);
 
+            // Settando o token no cabeçalho da requisição para a api localhost:6001
             var apiClient = new HttpClient();
             apiClient.SetBearerToken(tokenResponse.AccessToken);
 

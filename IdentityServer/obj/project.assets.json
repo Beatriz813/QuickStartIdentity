@@ -3712,24 +3712,26 @@
     ]
   },
   "packageFolders": {
-    "/home/beatriz/.nuget/packages/": {}
+    "C:\\Users\\Beatriz Alcântara\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/beatriz/Público/Codigos/C#/quickstartIdentity/IdentityServer/IdentityServer.csproj",
+      "projectUniqueName": "C:\\Users\\Beatriz Alcântara\\source\\repos\\QuickStartIdentity\\IdentityServer\\IdentityServer.csproj",
       "projectName": "IdentityServer",
-      "projectPath": "/home/beatriz/Público/Codigos/C#/quickstartIdentity/IdentityServer/IdentityServer.csproj",
-      "packagesPath": "/home/beatriz/.nuget/packages/",
-      "outputPath": "/home/beatriz/Público/Codigos/C#/quickstartIdentity/IdentityServer/obj/",
+      "projectPath": "C:\\Users\\Beatriz Alcântara\\source\\repos\\QuickStartIdentity\\IdentityServer\\IdentityServer.csproj",
+      "packagesPath": "C:\\Users\\Beatriz Alcântara\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Beatriz Alcântara\\source\\repos\\QuickStartIdentity\\IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/beatriz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Beatriz Alcântara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3773,7 +3775,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
