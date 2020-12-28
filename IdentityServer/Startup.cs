@@ -24,9 +24,10 @@ namespace IdentityServer
             //services.AddControllersWithViews();
 
             var builder = services.AddIdentityServer()
-                            .AddDeveloperSigningCredential()        //This is for dev only scenarios when you don’t have a certificate to use.
-                            .AddInMemoryApiScopes(Config.ApiScopes)
-                            .AddInMemoryClients(Config.Clients);
+                            .AddDeveloperSigningCredential()
+                            .AddInMemoryApiScopes(Config.ApiScopes())
+                            .AddInMemoryClients(Config.Clients())
+                            .AddTestUsers(Config.GetUsers());
         }
 
         public void Configure(IApplicationBuilder app)
