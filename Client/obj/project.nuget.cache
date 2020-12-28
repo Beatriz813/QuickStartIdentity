@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YemXFZDVylRhyEv81xPw4ga7WwrSANQRY1yfmTCAKqv3clgIVn87U/C1jaWFML/EC6Vtxs7Ho8YUx2+Tzz5H7A==",
+  "success": true,
+  "projectFilePath": "/home/beatriz/Público/Codigos/C#/quickstartIdentity/Client/Client.csproj",
+  "expectedPackageFiles": [
+    "/home/beatriz/.nuget/packages/identitymodel/4.5.0/identitymodel.4.5.0.nupkg.sha512",
+    "/home/beatriz/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/home/beatriz/.nuget/packages/system.text.encodings.web/5.0.0/system.text.encodings.web.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
