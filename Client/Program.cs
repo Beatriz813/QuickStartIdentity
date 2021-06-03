@@ -24,6 +24,7 @@ namespace Client
                 return;
             }
 
+
             var tokenResponse = await client.RequestPasswordTokenAsync(new PasswordTokenRequest
             {
                 Address = disco.TokenEndpoint,

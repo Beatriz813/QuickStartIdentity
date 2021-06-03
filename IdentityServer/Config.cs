@@ -22,6 +22,7 @@ namespace IdentityServer
         {
             return new List<Client>
             {
+                // ClientId e ClientSecrets são como login senha para serem identificados pelo indentity server
                 new Client {
                     ClientId = "client",
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
