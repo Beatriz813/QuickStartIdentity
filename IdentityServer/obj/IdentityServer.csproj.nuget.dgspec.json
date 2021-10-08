@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[3.1.15, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[3.2.0, )"

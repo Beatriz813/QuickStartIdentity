@@ -2,6 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
 using System.Collections.Generic;
@@ -30,6 +31,23 @@ namespace IdentityServer
                         new Secret("secret".Sha256())
                     },
                     AllowedScopes = { "api1" }
+                },
+                new Client
+                {
+                    ClientId = "mvc",
+                    ClientSecrets = { new Secret("secret".Sha256()) },
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RedirectUris = { "https://localhost:5002/signin-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:5002/signout-callback-oidc" },
+                    AllowOfflineAccess = true,
+                    /* LISTA DE ESCOPO PARA ESTE CLIENTE EM ESPECÍFICO */
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Email,
+                        "api1"
+                    }
                 }
             };
         }
@@ -51,6 +69,15 @@ namespace IdentityServer
                 }
             };
         }
+        /* LISTA DE RECURSOS QUE ESSE IS DISPONIBILIZA AO TODO.
+         * NÃO QUER DIZER QUE TODAS AS APLICAÇÕES QUE ELE SERVE VÃO TER ACESSO À ESTAS. */
+        public static List<IdentityResource> IdentityResources =>
+            new List<IdentityResource>
+            {
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile(),
+                new IdentityResources.Email()
+            };
     }
 
 

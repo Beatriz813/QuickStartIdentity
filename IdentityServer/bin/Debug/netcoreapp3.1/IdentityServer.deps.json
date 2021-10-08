@@ -25,6 +25,7 @@
       "IdentityServer/1.0.0": {
         "dependencies": {
           "IdentityServer4": "4.0.0",
+          "Microsoft.AspNetCore.Authentication.Google": "3.1.15",
           "Serilog.AspNetCore": "3.2.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -361,6 +362,17 @@
         },
         "compile": {
           "lib/netstandard2.0/IdentityServer4.Storage.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/3.1.15": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "3.1.15.0",
+            "fileVersion": "3.100.1521.21512"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
@@ -2763,6 +2775,13 @@
       "sha512": "sha512-4TH/U5mSp/8UK2unoJYXqOZChHodtIH+nhAeAjX5S08QSbJatzZCYmOkj735SdewweJvyvKffISJYqvFPBgBmA==",
       "path": "identityserver4.storage/4.0.0",
       "hashPath": "identityserver4.storage.4.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/3.1.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mPRFbSG8skxnTTa9Epnacw8q9eLD2Cpofl88erM32BEMXsuOO/JFeRsTkEyP/LZs0O+fUkhj/j5CxTW/WSlh8g==",
+      "path": "microsoft.aspnetcore.authentication.google/3.1.15",
+      "hashPath": "microsoft.aspnetcore.authentication.google.3.1.15.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
       "type": "package",
